@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka-server.iml" filepath="$PROJECT_DIR$/eureka/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-consumer-feign/src/main/main.iml" filepath="$PROJECT_DIR$/order-consumer-feign/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-consumer/order-consumer.iml" filepath="$PROJECT_DIR$/order-consumer/order-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-consumer-feign/order-consumer-feign.iml" filepath="$PROJECT_DIR$/order-consumer-feign/order-consumer-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-consumer-ribbon-hystrix/order-consumer-ribbon-hystrix.iml" filepath="$PROJECT_DIR$/order-consumer-ribbon-hystrix/order-consumer-ribbon-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-zuul/order-zuul.iml" filepath="$PROJECT_DIR$/order-zuul/order-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud_demo.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-consumer-feign/src/test/test.iml" filepath="$PROJECT_DIR$/order-consumer-feign/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
