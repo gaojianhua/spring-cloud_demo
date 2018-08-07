@@ -10,7 +10,9 @@ import org.springframework.context.annotation.Bean;
 /**
  *  访问: http://localhost:7777/order-server/dc
  *
- *  即可访问order-server服务的dc
+ *  http://localhost:7777/order-server/dc?accessToken=token
+ *
+ *  即可访问名称为:order-server服务的路径为:dc的接口
  */
 @EnableZuulProxy
 @SpringCloudApplication

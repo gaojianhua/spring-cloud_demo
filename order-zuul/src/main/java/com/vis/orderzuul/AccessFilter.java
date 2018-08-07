@@ -1,7 +1,10 @@
 package com.vis.orderzuul;
 
 import com.netflix.zuul.ZuulFilter;
+import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
+
+import javax.servlet.http.HttpServletRequest;
 
 
 /**
@@ -35,7 +38,17 @@ public class AccessFilter extends ZuulFilter {
 
     @Override
     public Object run() throws ZuulException {
-        //Object
-        return null;
+        RequestContext ctx = RequestContext.getCurrentContext();
+        HttpServletRequest request = ctx.getRequest();
+        System.out.println("send="+request.getMethod()+",to="+request.getRequestURL().toString());
+        Object accessToken = request.getParameter("accessToken");
+        if(accessToken == null) {
+            System.out.println("access token is empty");
+            ctx.setSendZuulResponse(false);
+            ctx.setResponseStatusCode(401);
+            return " fail accessToken is null !";
+        }
+        System.out.println("access token ok");
+        return " zuul say success !";
     }
 }
